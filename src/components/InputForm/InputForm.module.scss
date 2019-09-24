@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+
+.InputForm {
+  background-color: $mainBgColor;
+  color: $mainTextColor;
+  margin: 10px auto;
+  width: 600px;
+  text-align: center;
+  border: 1px solid $mainStyleColor;
+  border-Radius: 5px;
+}
+
+.TextInput {
+  width: 45%;
+  height: 25px;
+  display: inline-block;
+  margin: 5px 5px auto;
+  font-Size: 15px;
+  outline: none;
+  background-color: $mainBgColor;
+  color: $mainTextColor;
+  border: 2px solid transparent;
+  border-bottom-color: $fadedStyleColor;
+  &Shorter {
+    @extend .TextInput;
+    width: 25%;
+  }
+}
+.TextInput:focus {
+  border-bottom-color: $mainStyleColor;
+}
+
+.SubmitButton {
+  background-color: $mainBgColor;
+  color: $mainTextColor;
+  width: 30%;
+  font-size: 15px;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid $mainStyleColor;
+  border-radius: 5px;
+}
